@@ -1,8 +1,9 @@
 import BoardItem from './BoardItem';
+import styles from './BoardList.module.scss';
 
 function BoardList({ posts }) {
   return (
-    <div style={{ padding: '10px', border: '1px solid #ccc' }}>
+    <div className={styles.boardList}>
       <h3>게시글 목록 영역 (BoardList)</h3>
       <ul>
         {posts.length === 0

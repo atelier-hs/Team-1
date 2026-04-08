@@ -1,6 +1,10 @@
+import styles from './BoardItem.module.scss';
+
 function BoardItem({ post }) {
   return (
-    <li>{post.title} - {post.content}</li>
+    <li className={styles.boardItem}>
+      {post.title} - {post.content}
+    </li>
   );
 }
 
